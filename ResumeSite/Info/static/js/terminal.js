@@ -61,6 +61,11 @@ var chart2 = new CanvasJS.Chart("Time", {
   }]
 });
 chart2.render();
+
+var value = Math.floor(Math.random() * PhotoData.length);
+document.getElementById("what").innerHTML = `${PhotoData[value].what}`
+document.getElementById("context").innerHTML = `${PhotoData[value].context}`
+document.getElementById("context2").innerHTML = `<img id="image" src="/static/images/${PhotoData[value].image}" style="width:100%" >`
 }
 
 
